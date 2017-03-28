@@ -1,12 +1,14 @@
-#Limelight
+#Moonlight
 
-Limelight is an open source implementation of NVIDIA's GameStream, as used by the NVIDIA Shield.
-We reverse engineered the Shield streaming software, and created a version that can be run on any Android device.
+[Moonlight](http://moonlight-stream.com) is an open source implementation of NVIDIA's GameStream, as used by the NVIDIA Shield.
+We reverse engineered the Shield streaming software and created a version that can be run on any Android device.
 
-Limelight will allow you to stream your full collection of games from your Windows PC to your Android device,
-in your own home, or over the internet.
+Moonlight will allow you to stream your full collection of games from your Windows PC to your Android device,
+whether in your own home or over the internet.
 
-[Limelight-pc](https://github.com/limelight-stream/limelight-pc) is also currently in development for Windows, OS X and Linux. Versions for [iOS](https://github.com/limelight-stream/limelight-ios) and [Windows Phone](https://github.com/limelight-stream/limelight-wp) are also in development.
+[Moonlight-pc](https://github.com/moonlight-stream/moonlight-pc) is also currently in development for Windows, OS X and Linux. Versions for [iOS](https://github.com/moonlight-stream/moonlight-ios) and [Windows and Windows Phone](https://github.com/moonlight-stream/moonlight-windows) are also in development.
+
+Check our [wiki](https://github.com/moonlight-stream/moonlight-docs/wiki) for more detailed information or a troubleshooting guide. 
 
 ##Features
 
@@ -14,13 +16,10 @@ in your own home, or over the internet.
 * Full gamepad support for MOGA, Xbox 360, PS3, OUYA, and Shield
 * Automatically finds GameStream-compatible PCs on your network
 
-##Features in development
-* Keyboard input
-
 ##Installation
 
-* Download and install Limelight for Android from
-[Google Play](https://play.google.com/store/apps/details?id=com.limelight)
+* Download and install Moonlight for Android from
+[Google Play](https://play.google.com/store/apps/details?id=com.limelight), [Amazon App Store](http://www.amazon.com/gp/product/B00JK4MFN2), or directly from the [releases page](https://github.com/moonlight-stream/moonlight-android/releases)
 * Download [GeForce Experience](http://www.geforce.com/geforce-experience) and install on your Windows PC
 
 ##Requirements
@@ -28,14 +27,13 @@ in your own home, or over the internet.
 * [GameStream compatible](http://shield.nvidia.com/play-pc-games/) computer with GTX 600/700 series GPU
 * Android device running 4.1 (Jelly Bean) or higher
 * High-end wireless router (802.11n dual-band recommended)
-* Exynos/Snapdragon SoC __OR__ Quad-Core 1.4 GHz Cortex-A9 or higher (Tegra 3)
 
 ##Usage
 
 * Turn on GameStream in the GFE settings
 * If you are connecting from outside the same network, turn on internet
   streaming
-* When on the same network as your PC, open Limelight and tap on your PC in the list
+* When on the same network as your PC, open Moonlight and tap on your PC in the list
 * Accept the pairing confirmation on your PC
 * Tap your PC again to view the list of apps to stream
 * Play games!
@@ -48,7 +46,11 @@ This project is being actively developed at [XDA Developers](http://forum.xda-de
 2. Write code
 3. Send Pull Requests
 
-Check out our [website](http://limelight-stream.com) for project links and information.
+##Building
+* Install Android Studio and the Android NDK
+* Run ‘git submodule update --init --recursive’ from within moonlight-android/
+* In moonlight-android/, create a file called ‘local.properties’. Add an ‘ndk.dir=’ property to the local.properties file and set it equal to your NDK directory.
+* Build the APK using Android Studio
 
 ##Authors
 
@@ -57,5 +59,5 @@ Check out our [website](http://limelight-stream.com) for project links and infor
 * [Aaron Neyer](https://github.com/Aaronneyer)  
 * [Andrew Hennessy](https://github.com/yetanothername)
 
-Limelight is the work of students at [Case Western](http://case.edu) and was
+Moonlight is the work of students at [Case Western](http://case.edu) and was
 started as a project at [MHacks](http://mhacks.org).
